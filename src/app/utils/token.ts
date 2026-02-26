@@ -13,7 +13,7 @@ const getAccessToken = (payload: JwtPayload) => {
 
 const getRefreshToken = (paylaod: JwtPayload) => {
   const refreshToken = jwtUtils.createToken(paylaod, env.REFRESH_TOKEN_SECRET, {
-    expiresIn: "1m",
+    expiresIn: "30d",
   });
   return refreshToken;
 };

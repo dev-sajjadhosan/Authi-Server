@@ -24,7 +24,8 @@ export const UserStatus = {
   DISABLE: 'DISABLE',
   TEMPORARY_DISABLE: 'TEMPORARY_DISABLE',
   SUSPANDE: 'SUSPANDE',
-  BLOCK: 'BLOCK'
+  BLOCK: 'BLOCK',
+  DELETED: 'DELETED'
 } as const
 
 export type UserStatus = (typeof UserStatus)[keyof typeof UserStatus]

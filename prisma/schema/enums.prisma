@@ -11,4 +11,5 @@ enum UserStatus {
     TEMPORARY_DISABLE
     SUSPANDE
     BLOCK
+    DELETED
 }
