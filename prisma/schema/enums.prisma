@@ -1,0 +1,14 @@
+enum Role {
+    CUSTOMER
+    ADMIN
+    SUPER_ADMIN
+}
+
+enum UserStatus {
+    ACTIVE
+    DEACTIVE
+    DISABLE
+    TEMPORARY_DISABLE
+    SUSPANDE
+    BLOCK
+}

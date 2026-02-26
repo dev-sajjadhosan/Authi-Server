@@ -1,0 +1,14 @@
+model Profile {
+    id       String  @id @default(uuid())
+    userId  String  @unique
+    user     User    @relation(fields: [userId], references: [id])
+    name     String
+    image    String?
+    email    String  @unique
+    bio      String?
+    location String?
+    website  String?
+    phone    String?
+
+    @@map("profile")
+}
